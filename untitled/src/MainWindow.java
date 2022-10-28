@@ -5,4 +5,6 @@ public class MainWindow {
     private JButton RegisterBtn;
     private JPasswordField PasswordText;
     private JTextField UsernameTextField;
+
+    public MainWindow(){}
 }
