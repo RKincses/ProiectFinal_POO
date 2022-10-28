@@ -6,4 +6,4 @@ public class AdminWindow {
     private JList ListaSoferi;
     private JTextField textField1;
     private JTextField textField2;
-}
+}//cox
