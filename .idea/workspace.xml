@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e09124dd-ea76-4ce7-9de4-866e467b51db" name="Changes" comment="Form Nou">
+    <list default="true" id="e09124dd-ea76-4ce7-9de4-866e467b51db" name="Changes" comment="Color">
+      <change afterPath="$PROJECT_DIR$/src/ComenziP.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AdminWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/AdminWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LivratorWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LivratorWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LogInWindow.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/LogInWindow.form" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlasareComenzi.form" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlasareComenzi.form" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +55,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666967091977</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Form Nou">
+      <created>1666968362597</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1666968362597</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Color">
+      <created>1666968426658</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1666968426658</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -74,6 +85,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Form Nou" />
-    <option name="LAST_COMMIT_MESSAGE" value="Form Nou" />
+    <MESSAGE value="Color" />
+    <option name="LAST_COMMIT_MESSAGE" value="Color" />
   </component>
 </project>
