@@ -20,12 +20,12 @@
           <text value="Log in"/>
         </properties>
       </component>
-      <component id="b2564" class="javax.swing.JButton" binding="RegisterBtn">
+      <component id="b2564" class="javax.swing.JButton" binding="CustomerBtn">
         <constraints>
           <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
-          <text value="Register"/>
+          <text value="Customer"/>
         </properties>
       </component>
       <component id="b2a63" class="javax.swing.JPasswordField" binding="PasswordText">
