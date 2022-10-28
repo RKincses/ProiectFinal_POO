@@ -5,7 +5,9 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-3422011"/>
+    </properties>
     <border type="none"/>
     <children>
       <grid id="8e705" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
@@ -22,7 +24,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-921877"/>
+            </properties>
           </component>
           <component id="3f59a" class="javax.swing.JLabel">
             <constraints>
@@ -56,7 +60,9 @@
                 <preferred-size width="150" height="50"/>
               </grid>
             </constraints>
-            <properties/>
+            <properties>
+              <background color="-921877"/>
+            </properties>
           </component>
           <component id="1a75c" class="javax.swing.JLabel">
             <constraints>

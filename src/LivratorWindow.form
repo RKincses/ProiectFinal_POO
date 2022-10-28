@@ -5,7 +5,10 @@
     <constraints>
       <xy x="20" y="20" width="500" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <background color="-5177360"/>
+      <enabled value="false"/>
+    </properties>
     <border type="none"/>
     <children>
       <component id="d6ff3" class="javax.swing.JList" binding="ComenziSofer">
@@ -14,7 +17,9 @@
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-921877"/>
+        </properties>
       </component>
       <component id="72340" class="javax.swing.JTextField" binding="IDComandaTextField" default-binding="true">
         <constraints>
