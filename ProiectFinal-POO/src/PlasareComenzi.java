@@ -2,6 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
+import java.util.Random;
 public class  PlasareComenzi {
     private JPanel panel;
     private JTextField numeTextField;
@@ -20,16 +21,14 @@ public class  PlasareComenzi {
     private JButton logInButton;
     private JPanel panel1;
     private static JFrame frame = new JFrame("Plasare Comenzi");
-    private ArrayList<Persoana> arrayExp;
-    private ArrayList<Persoana> arrayDest;
+    public static ArrayList<Comenzi> arrayComenzi;
     public StringBuffer buffer = new StringBuffer();
     public PlasareComenzi() {
         buffer.append("Toate ");
         buffer.append("campurile ");
         buffer.append("sunt ");
         buffer.append("obligatorii!");
-        arrayExp = new ArrayList<Persoana>();
-        arrayDest = new ArrayList<Persoana>();
+        arrayComenzi = new ArrayList<Comenzi>();
         confirmaComandaButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -52,8 +51,6 @@ public class  PlasareComenzi {
                 String codPostal = codPostalTextField.getText();
                 String adresa = adresaTextField.getText();
                 Persoana exp = new Persoana(nume, nrTelefon, judet, localitate, codPostal, adresa);
-                arrayExp.add(exp);
-
                 String nume1 = numeTextField1.getText();
                 String nrTelefon1 = nrTelefonTextField1.getText();
                 String judet1 = judetTextField1.getText();
@@ -61,7 +58,10 @@ public class  PlasareComenzi {
                 String codPostal1 = codPostalTextField1.getText();
                 String adresa1 = adresaTextField1.getText();
                 Persoana dest = new Persoana(nume1, nrTelefon1, judet1, localitate1, codPostal1, adresa1);
-                arrayDest.add(dest);
+                Random rand = new Random();
+                int id_comanda = rand.nextInt(1000);
+                Comenzi comanda = new Comenzi(exp,dest,id_comanda);
+                arrayComenzi.add(comanda);
             }
         });
         logInButton.addActionListener(new ActionListener() {
@@ -73,7 +73,7 @@ public class  PlasareComenzi {
     }
     public static void main(String args[]) {
 
-        frame.setSize(450,450);
+        frame.setSize(800,480);
         frame.setContentPane(new PlasareComenzi().panel);
         frame.setContentPane(new PlasareComenzi().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

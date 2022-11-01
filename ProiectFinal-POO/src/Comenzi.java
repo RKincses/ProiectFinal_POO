@@ -1,4 +1,4 @@
-public class Comenzi {
+public class Comenzi implements Comanda {
     private Persoana expeditor;
     private Persoana destinatar;
     private int id_comanda;
@@ -32,7 +32,7 @@ public class Comenzi {
     }
 
     public String toString(){
-        String afisare = "Expeditor: " + expeditor.getNrTelefon() + " Destinatar: " + destinatar.getNrTelefon() + "ID comanda: " + id_comanda;
+        String afisare = "Expeditor: " + expeditor.getNrTelefon() + " Destinatar: " + destinatar.getNrTelefon() + " ID comanda: " + id_comanda;
         return afisare;
     }
 }
