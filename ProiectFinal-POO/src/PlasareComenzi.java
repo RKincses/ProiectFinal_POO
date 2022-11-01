@@ -1,5 +1,7 @@
 import javax.swing.*;
-
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.ArrayList;
 public class PlasareComenzi {
     private JTextField numeTextField;
     private JTextField nrTelefonTextField;
@@ -15,4 +17,9 @@ public class PlasareComenzi {
     private JTextField adresaTextField1;
     private JButton confirmaComandaButton;
     private JButton logInButton;
+    private ArrayList<Persoana> array;
+    public StringBuffer buffer = new StringBuffer();
+    public PlasareComenzi {
+
+    }
 }

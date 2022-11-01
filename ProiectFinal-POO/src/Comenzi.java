@@ -13,9 +13,7 @@ public class Comenzi(){
         return expeditor;
     }
 
-    public Persoana getDestinatar() {
-        return destinatar;
-    }
+    public Persoana getDestinatar() { return destinatar; }
 
     public int getId_comanda() {
         return id_comanda;
