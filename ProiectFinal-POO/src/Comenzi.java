@@ -1,6 +1,6 @@
-public class Comenzi(){
-    private Persoana expeditor = new Persoana();
-    private Persoana destinatar = new Persoana();
+public class Comenzi {
+    private Persoana expeditor;
+    private Persoana destinatar;
     private int id_comanda;
     public Comenzi(Persoana expeditor, Persoana destinatar, int id_comanda)
     {
