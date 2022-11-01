@@ -17,9 +17,16 @@ public class PlasareComenzi {
     private JTextField adresaTextField1;
     private JButton confirmaComandaButton;
     private JButton logInButton;
-    private ArrayList<Persoana> array;
+    private ArrayList<Persoana> arrayExp;
+    private ArrayList<Persoana> arrayDest;
     public StringBuffer buffer = new StringBuffer();
-    public PlasareComenzi {
+    public PlasareComenzi() {
+        buffer.append("Toate ");
+        buffer.append("campurile ");
+        buffer.append("sunt ");
+        buffer.append("obligatorii!");
+        arrayExp = new ArrayList<Persoana>();
+        arrayDest = new ArrayList<Persoana>();
 
     }
 }

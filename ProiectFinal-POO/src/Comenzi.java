@@ -5,7 +5,7 @@ public class Comenzi(){
     public Comenzi(Persoana expeditor, Persoana destinatar, int id_comanda)
     {
         this.expeditor = expeditor;
-        this.destinatar =destinatar;
+        this.destinatar = destinatar;
         this.id_comanda = id_comanda;
     }
 
