@@ -68,6 +68,22 @@ public class LogInWindow {
                 }
             }
         });
+        adminCheckBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if (livratorCheckBox.isSelected()){
+                    livratorCheckBox.setSelected(false);
+                }
+            }
+        });
+        livratorCheckBox.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                if(adminCheckBox.isSelected()){
+                    adminCheckBox.setSelected(false);
+                }
+            }
+        });
     }
     public static void start(JFrame frame){
 
