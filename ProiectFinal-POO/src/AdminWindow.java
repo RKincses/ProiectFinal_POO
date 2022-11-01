@@ -58,7 +58,7 @@ public class AdminWindow {
                     {
                         if(PlasareComenzi.arrayComenzi.get(i).getId_comanda() == Integer.parseInt(IDComandaTextField.getText()))
                         {
-                            myWriter.write(PlasareComenzi.arrayComenzi.get(i).toString());
+                            myWriter.write(PlasareComenzi.arrayComenzi.get(i).toString2());
                         }
                     }
                     myWriter.close();

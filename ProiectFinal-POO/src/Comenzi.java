@@ -35,4 +35,15 @@ public class Comenzi implements Comanda {
         String afisare = "Expeditor: " + expeditor.getNrTelefon() + " Destinatar: " + destinatar.getNrTelefon() + " ID comanda: " + id_comanda;
         return afisare;
     }
+
+    public String toString2(){
+        String afisare = "Expeditor { " + "Nume :"+ expeditor.getNume()+
+                " Telefon : " + expeditor.getNrTelefon() +" Judet : " + expeditor.getJudet() + " Adresa : " +expeditor.getAdresa() +
+                " Cod Postal :" + expeditor.getCodPostal() + " Localitate: " + expeditor.getLocalitate() +
+                "} Destinatar { " +
+                "Nume :"+ destinatar.getNume()+ " Telefon : " + destinatar.getNrTelefon() +" Judet : " + destinatar.getJudet() +
+                " Adresa : " +destinatar.getAdresa() + " Cod Postal :" + destinatar.getCodPostal() + " Localitate: "
+                + destinatar.getLocalitate() + "}";
+        return afisare;
+    }
 }
