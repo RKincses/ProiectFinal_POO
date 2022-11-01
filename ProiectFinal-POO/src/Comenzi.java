@@ -1,4 +1,4 @@
-public class Comenzi(){
+public class Comenzi() extends Persoana{
     private Persoana expeditor;
     private Persoana destinatar;
     private int id_comanda;
