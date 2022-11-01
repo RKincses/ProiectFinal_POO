@@ -40,9 +40,9 @@ public class LogInWindow {
                             ok = false;
                             AdminWindow.start(LogInFrame);
                         }
-                        else{
-                            JOptionPane.showMessageDialog(null,mesaj1);
-                        }
+                    }
+                    if(ok){
+                        JOptionPane.showMessageDialog(null,mesaj1);
                     }
                 }
                 if (livratorCheckBox.isSelected()) {
@@ -61,9 +61,9 @@ public class LogInWindow {
                             ok = false;
                             LivratorWindow.start(LogInFrame);
                         }
-                        else{
-                            JOptionPane.showMessageDialog(null,mesaj2);
-                        }
+                    }
+                    if (ok){
+                        JOptionPane.showMessageDialog(null,mesaj2);
                     }
                 }
             }
