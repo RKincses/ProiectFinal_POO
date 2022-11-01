@@ -12,6 +12,7 @@ public class LogInWindow {
     private JCheckBox livratorCheckBox;
     private JTextField usernameTextField;
     private JPasswordField passwordPasswordField;
+    private JPanel panel;
 
     public LogInWindow() {
         confirmButton.addActionListener(new ActionListener() {
@@ -55,5 +56,14 @@ public class LogInWindow {
                 }
             }
         });
+    }
+    public static void start(JFrame frame){
+        JFrame LogInFrame = new JFrame("Log in");
+        LogInFrame.setSize(400,450);
+        LogInFrame.setContentPane(new LogInWindow().panel);
+        LogInFrame.setContentPane(new LogInWindow().panel1);
+        LogInFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        LogInFrame.setVisible(true);
+        frame.setVisible(false);
     }
 }

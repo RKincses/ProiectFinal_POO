@@ -19,6 +19,7 @@ public class PlasareComenzi {
     private JButton confirmaComandaButton;
     private JButton logInButton;
     private JPanel panel1;
+    private static JFrame frame = new JFrame("Plasare Comenzi");
     private ArrayList<Persoana> arrayExp;
     private ArrayList<Persoana> arrayDest;
     public StringBuffer buffer = new StringBuffer();
@@ -66,17 +67,16 @@ public class PlasareComenzi {
         logInButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                LogInWindow.start(frame);
             }
         });
     }
-    public static void main(String[] args) {
+    public static void main(String args[]) {
 
-        JFrame frame = new JFrame("Plasare Comanda");
+        frame.setSize(450,450);
         frame.setContentPane(new PlasareComenzi().panel);
         frame.setContentPane(new PlasareComenzi().panel1);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        frame.pack();
         frame.setVisible(true);
     }
 }
