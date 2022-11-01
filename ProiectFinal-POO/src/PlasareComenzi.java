@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-public class PlasareComenzi {
+public class  PlasareComenzi {
     private JPanel panel;
     private JTextField numeTextField;
     private JTextField nrTelefonTextField;

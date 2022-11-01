@@ -13,8 +13,12 @@ public class LogInWindow {
     private JTextField usernameTextField;
     private JPasswordField passwordPasswordField;
     private JPanel panel;
-
+    public static JFrame LogInFrame = new JFrame("Log in");
+    public StringBuffer mesaj1 = new StringBuffer();
+    public StringBuffer mesaj2 = new StringBuffer();
     public LogInWindow() {
+        mesaj1.append("Datele de logare nu coincid cu datele de admin!");
+        mesaj2.append("Datele de logare nu coincid cu datele de livrator!");
         confirmButton.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -34,6 +38,10 @@ public class LogInWindow {
                         String dataPass = readf.nextLine();
                         if (dataPass.equals(password) && dataUser.equals(username)) {
                             ok = false;
+                            AdminWindow.start(LogInFrame);
+                        }
+                        else{
+                            JOptionPane.showMessageDialog(null,mesaj1);
                         }
                     }
                 }
@@ -51,6 +59,10 @@ public class LogInWindow {
                         String dataPass = readf.nextLine();
                         if (dataPass.equals(password) && dataUser.equals(username)) {
                             ok = false;
+                            LivratorWindow.start(LogInFrame);
+                        }
+                        else{
+                            JOptionPane.showMessageDialog(null,mesaj2);
                         }
                     }
                 }
@@ -58,7 +70,7 @@ public class LogInWindow {
         });
     }
     public static void start(JFrame frame){
-        JFrame LogInFrame = new JFrame("Log in");
+
         LogInFrame.setSize(400,450);
         LogInFrame.setContentPane(new LogInWindow().panel);
         LogInFrame.setContentPane(new LogInWindow().panel1);
