@@ -62,6 +62,19 @@ public class  PlasareComenzi {
                 int id_comanda = rand.nextInt(1000);
                 Comenzi comanda = new Comenzi(exp,dest,id_comanda);
                 arrayComenzi.add(comanda);
+                arrayComenzi.add(comanda);
+                numeTextField.setText("");
+                numeTextField1.setText("");
+                nrTelefonTextField.setText("");
+                nrTelefonTextField1.setText("");
+                judetTextField.setText("");
+                judetTextField1.setText("");
+                localitateTextField.setText("");
+                localitateTextField1.setText("");
+                codPostalTextField.setText("");
+                codPostalTextField1.setText("");
+                adresaTextField.setText("");
+                adresaTextField1.setText("");
             }
         });
         logInButton.addActionListener(new ActionListener() {
