@@ -13,6 +13,7 @@ public class LogInWindow {
     private JTextField usernameTextField;
     private JPasswordField passwordPasswordField;
     private JPanel panel;
+    private JButton backButton;
     public static JFrame LogInFrame = new JFrame("Log in");
     public StringBuffer mesaj1 = new StringBuffer();
     public StringBuffer mesaj2 = new StringBuffer();
@@ -82,6 +83,13 @@ public class LogInWindow {
                 if(adminCheckBox.isSelected()){
                     adminCheckBox.setSelected(false);
                 }
+            }
+        });
+        backButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                PlasareComenzi.frame.setVisible(true);
+                LogInFrame.setVisible(false);
             }
         });
     }

@@ -20,7 +20,7 @@ public class  PlasareComenzi {
     private JButton confirmaComandaButton;
     private JButton logInButton;
     private JPanel panel1;
-    private static JFrame frame = new JFrame("Plasare Comenzi");
+    public static JFrame frame = new JFrame("Plasare Comenzi");
     public static ArrayList<Comenzi> arrayComenzi;
     public StringBuffer buffer = new StringBuffer();
     public PlasareComenzi() {

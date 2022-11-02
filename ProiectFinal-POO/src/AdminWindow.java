@@ -6,7 +6,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.io.IOException;
-import java.io.FileWriter;
+
 public class AdminWindow {
     private JButton alocareComandaButton;
     private JList ListaComenziNealocate;
@@ -15,6 +15,7 @@ public class AdminWindow {
     private JTextField IDSoferTextField;
     private JPanel panel;
     private JPanel panel1;
+    private JButton inapoiButton;
     public static JFrame AdminFrame = new JFrame("Admin");
     private ArrayList<Soferi> soferi;
     public AdminWindow() {
@@ -52,7 +53,16 @@ public class AdminWindow {
             @Override
             public void actionPerformed(ActionEvent e) {
                 int finalId_sofer = Integer.parseInt(IDSoferTextField.getText()) ;
+                for(int i = 0; i < PlasareComenzi.arrayComenzi.size(); i++)
+                {
+                    if(PlasareComenzi.arrayComenzi.get(i).getId_comanda() == Integer.parseInt(IDComandaTextField.getText()))
+                    {
+                        PlasareComenzi.arrayComenzi.get(i).setId_livrator(finalId_sofer);
+                    }
+                }
+                /*
                 try {
+
                     FileWriter myWriter = new FileWriter(String.valueOf(finalId_sofer));
                     for(int i = 0; i < PlasareComenzi.arrayComenzi.size(); i++)
                     {
@@ -66,6 +76,14 @@ public class AdminWindow {
                     System.out.println("Eroare!");
                     ie.printStackTrace();
                 }
+                 */
+            }
+        });
+        inapoiButton.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                PlasareComenzi.frame.setVisible(true);
+                AdminFrame.setVisible(false);
             }
         });
     }
