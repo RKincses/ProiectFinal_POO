@@ -62,7 +62,6 @@ public class  PlasareComenzi {
                 int id_comanda = rand.nextInt(1000);
                 Comenzi comanda = new Comenzi(exp,dest,id_comanda);
                 arrayComenzi.add(comanda);
-                arrayComenzi.add(comanda);
                 numeTextField.setText("");
                 numeTextField1.setText("");
                 nrTelefonTextField.setText("");
