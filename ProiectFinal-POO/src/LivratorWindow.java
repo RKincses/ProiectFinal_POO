@@ -33,7 +33,7 @@ public class LivratorWindow {
 
     public static void start(JFrame frame){
 
-        LivratorFrame.setSize(400,450);
+        LivratorFrame.setSize(800,480);
         LivratorFrame.setContentPane(new LivratorWindow().panel1);
         LivratorFrame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         LivratorFrame.setVisible(true);
