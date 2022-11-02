@@ -3,7 +3,7 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class LivratorWindow {
-    private JList ComenziSofer;
+    private JList<Object> ComenziSofer;
     private JPanel panel1;
     private JTextField IDLivratorTextField;
     private JButton afiseazaComenziButton;
